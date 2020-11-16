@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "views",
+  "info": {
+    "name": "views"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "quickView": {
+      "type": "integer"
+    },
+    "datailedView": {
+      "type": "integer"
+    },
+    "article": {
+      "model": "article"
+    }
+  }
+}

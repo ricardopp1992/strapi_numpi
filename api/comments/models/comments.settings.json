@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "comments",
+  "info": {
+    "name": "Comments"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "comment": {
+      "type": "richtext",
+      "required": true
+    },
+    "displayName": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "email",
+      "required": true
+    },
+    "publish": {
+      "type": "boolean",
+      "default": false,
+      "required": false
+    },
+    "commentDate": {
+      "type": "datetime",
+      "required": true
+    },
+    "article": {
+      "via": "comments",
+      "model": "article"
+    }
+  }
+}
