@@ -44,6 +44,10 @@
     "comments": {
       "collection": "comments",
       "via": "article"
+    },
+    "categories": {
+      "via": "articles",
+      "collection": "categories"
     }
   }
 }
