@@ -2,7 +2,7 @@ module.exports = {
   settings: {
     cors: {
 	    enabled: true,
-      origin: ['*'],
+      origin: ['*', 'https://numpi-web.vercel.app'],
       credentials: true,
       headers: [
         '*'
